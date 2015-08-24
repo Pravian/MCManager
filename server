@@ -6,9 +6,11 @@
 # By Jerom van der Sar
 ##########################
 
-
 # Load the config
 source config.cfg
+
+# Allow cecho to be used
+source cecho
 
 function infomsg() {
   cecho "&6[INFO]&r $1"
@@ -94,8 +96,8 @@ function mc_stop() {
 }
 
 function mc_restart() {
-  mc_start()
-  mc_stop()
+  mc_start
+  mc_stop
 }
 
 function mc_update() {
